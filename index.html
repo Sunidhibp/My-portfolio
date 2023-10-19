@@ -1,0 +1,375 @@
+HTML code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunidhi Website</title>
+    <!-- magnific-popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- header -->
+
+    <header class="header">
+        <a href="#" class="logo"> </i>SUNIDHI</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#technical">Technical info</a>
+            <a href="#musicplayer">My Music</a>
+          
+            <a href="#library">Art Gallery</a>
+            <a href="#shop">shop</a>
+            <a href="#login">Connect</a>
+        </nav>
+        <div id="menu" class="fas fa-bars"></div>
+    </header>
+
+    <!-- end -->
+
+    <!-- home -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Live for  <br>the future.</h3>
+            <a href="#" class="btn">show more</a>
+        </div>
+    </section>
+
+    <!-- end -->
+
+    <!-- Technical Profile Section -->
+    <section class="technical-profile" id="technical">
+        <h1 class="heading">Technical Profile</h1>
+        <div class="skills">
+            <div class="skill">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>I have advanced my skills in front-end web development using HTML, CSS, JavaScript, and various web frameworks. This is the music project I created.</p>
+                <a href="https://github.com/Sunidhibp/Music-website">View Projects</a>
+            </div>
+            <div class="skill">
+                <i class="fas fa-eye"></i>
+                <h3>Computer Vision</h3>
+                <p>I have advanced my knowledge in computer vision and Python. This is the Virtual Invigilator project me and my teammate created for one of the hackathons.</p>
+                <a href="https://github.com/Sunidhibp/html">View Projects</a>
+            </div>
+            <div class="skill">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Cybersecurity</h3>
+                <p>I have advanced my skills, This is the certificate I obtained from CISCO</p>
+                <a href="https://www.credly.com/badges/33a42eae-38f2-46bd-96f1-4d05aaace2bb/linked_in_profile">View Projects</a>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- End Technical Profile Section -->
+
+
+    <!--music player -->
+
+    <section class="musicplayer" id="musicplayer">
+        <h1 class="heading">My music</h1>
+                <nav class="player">
+                    <div class="wrapper">
+                        <div class="details">
+                            <div class="now-playing">PLAYING x OF y</div>
+                            <div class="track-art"></div>
+                            <div class="track-name">Track Name</div>
+                            <div class="track-artist">Track Artist</div>
+                        </div>            
+                        <div class="slider_container">
+                            <div class="current-time">00:00</div>
+                             <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                             <div class="total-duration">00:00</div>
+                        </div>             
+                        <div class="slider_container">
+                            <i class="fa fa-volume-down"></i>
+                             <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                             <i class="fa fa-volume-up"></i>
+                        </div>            
+                        <div class="buttons">
+                            <div class="random-track" onclick="randomTrack()">
+                                <i class="fas fa-random fa-2x" title="random"></i>
+                            </div>
+                            <div class="prev-track" onclick="prevTrack()">
+                                 <i class="fa fa-step-backward fa-2x"></i>
+                             </div>
+                             <div class="playpause-track" onclick="playpauseTrack()">
+                                 <i class="fa fa-play-circle fa-5x"></i>
+                             </div>
+                             <div class="next-track" onclick="nextTrack()">
+                                 <i class="fa fa-step-forward fa-2x"></i>
+                             </div>
+                             <div class="repeat-track" onclick="repeatTrack()">
+                                 <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                             </div>
+                        </div>             
+                         <div id="wave">
+                             <span class="stroke"></span>
+                             <span class="stroke"></span>
+                             <span class="stroke"></span>
+                             <span class="stroke"></span>
+                             <span class="stroke"></span>
+                             <span class="stroke"></span>
+                             <span class="stroke"></span>
+                         </div>  
+                    </div>
+                </nav>
+    </section>
+
+    <!-- end -->
+
+   
+
+    <!-- library -->
+
+<section class="library" id="library">
+    <h1 class="heading">Art Gallery</h1>
+    <ul class="controls">
+        <li class="button active" data-filter="all">all</li>
+        <li class="button" data-filter="popular">Pencil Scetch</li>
+        <li class="button" data-filter="america">Painting</li>
+        <li class="button" data-filter="india">Color Scetch</li>
+        <li class="button" data-filter="korea">Logo</li>
+    </ul>
+    <div class="box-container">
+        <a href="https://i.pinimg.com/564x/7b/a0/d4/7ba0d4c1f31ebfd430c3489e4df96c0e.jpg" class="image popular">
+            <img src="https://i.pinimg.com/564x/7b/a0/d4/7ba0d4c1f31ebfd430c3489e4df96c0e.jpg" alt="">
+        </a>
+        <a href="https://i.pinimg.com/564x/16/37/fd/1637fdc0cffa914b622cd05f4f8f1a0d.jpg" class="image popular">
+            <img src="https://i.pinimg.com/564x/16/37/fd/1637fdc0cffa914b622cd05f4f8f1a0d.jpg" alt="">
+        </a>
+        <a href="https://i.pinimg.com/564x/c0/45/c6/c045c67e3f4feab6e7c48922c9915202.jpg" class="image popular">
+            <img src="https://i.pinimg.com/564x/c0/45/c6/c045c67e3f4feab6e7c48922c9915202.jpg" alt="">
+        </a>
+        <a href="https://i.pinimg.com/564x/3e/0d/53/3e0d534160027e351f3a28418d4fb0c3.jpg" class="image america">
+            <img src="https://i.pinimg.com/564x/3e/0d/53/3e0d534160027e351f3a28418d4fb0c3.jpg" alt="">
+        </a>
+        <a href="https://i.pinimg.com/564x/12/c5/e0/12c5e08d177fad52a8641e900b3964f7.jpg" class="image america">
+            <img src="https://i.pinimg.com/564x/12/c5/e0/12c5e08d177fad52a8641e900b3964f7.jpg" alt="">
+        </a>
+        <a href="https://i.pinimg.com/564x/dd/db/38/dddb38e087d2cdaca2b9034994b1860b.jpg" class="image korea">
+            <img src="https://i.pinimg.com/564x/dd/db/38/dddb38e087d2cdaca2b9034994b1860b.jpg" alt="">
+        </a>
+        <a href="https://i.pinimg.com/736x/86/0a/ea/860aeab0d18adec175d644216096e107.jpg" class="image korea">
+            <img src="https://i.pinimg.com/736x/86/0a/ea/860aeab0d18adec175d644216096e107.jpg" alt="">
+        </a>
+        <a href="https://i.pinimg.com/564x/c9/32/0a/c9320a481d3e9a0d5df0c15af1e4682b.jpg" class="image india">
+            <img src="https://i.pinimg.com/564x/c9/32/0a/c9320a481d3e9a0d5df0c15af1e4682b.jpg" alt="">
+        </a>
+        <a href="https://i.pinimg.com/564x/b3/a7/5d/b3a75d034d7795593a7f729c2b54fcb9.jpg" class="image india">
+            <img src="https://i.pinimg.com/564x/b3/a7/5d/b3a75d034d7795593a7f729c2b54fcb9.jpg" alt="">
+        </a>        
+    </div>
+</section>
+
+<!-- end -->
+
+    
+    <!-- end -->
+    <!-- shop -->
+
+    <section class="shop" id="shop">
+        <h1 class="heading">our shop</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="http://static1.squarespace.com/static/5aa2069c25bf02363bf5c7c4/62ba665fc3ec213525aed405/63957fb2f8de467562e37787/1670780394284/rm-wild-flower-global-yt-chart.jpeg?format=1500w" alt="">
+                    <div class="share">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>album(wild flower)</h3>
+                    <h3>Sunidhi</h3>
+                    <h5>$28.99</h5>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/38/Sam_Smith_and_Kim_Petras_-_Unholy.png" alt="">
+                    <div class="share">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>album(Unholy)</h3>
+                    <h3>Sunidhi</h3>
+                    <h5>$28.99</h5>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273970eb0bc318340af80080a5b" alt="">
+                    <div class="share">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Album(Piya re)</h3>
+                    <h3>Sunidhi</h3>
+                    <h5>$28.99</h5>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2022/06/24105512/left-and-right.jpeg" alt="">
+                    <div class="share">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>album(Left and right)</h3>
+                    <h3>Sunidhi</h3>
+                    <h5>$28.99</h5>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://s.saregama.tech/image/c/m/c/b8/02/shreya-ghoshal_1623851908.jpg" alt="">
+                    <div class="share">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>album(Sohneyaa)</h3>
+                    <h3>Sunidhi</h3>
+                    <h5>$28.99</h5>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://www.j-14.com/wp-content/uploads/2023/02/harry-styles-performance-grammys-2.jpg?resize=800%2C800&quality=86&strip=all" alt="">
+                    <div class="share">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>album(as it was)</h3>
+                    <h3>Sunidhi</h3>
+                    <h5>$28.99</h5>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/13/a8/ac/13a8ac7d-d90d-2e43-812d-273d9492b476/cover.jpg/600x600bf-60.jpg" alt="">
+                    <div class="share">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>album(dil ko karrar aayaa)</h3>
+                    <h3>Sunidhi</h3>
+                    <h5>$28.99</h5>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://www.billieeilish.com/files/2021/04/release_202104_BE-HTE-Title-Cover-1024x1024.jpg" alt="">
+                    <div class="share">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>album(Happier than ever)</h3>
+                    <h3>Sunidhi</h3>
+                    <h5>$28.99</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end -->
+
+<!-- login -->
+
+<section class="login" id="login">
+    <h1 class="heading" >Connect With me</h1>
+    <nav class="login">
+<div class="wrapper">
+    <span class="icon-close"><ion-icon name="close"></ion-icon>
+    </span>
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember=forget">
+                <label><input type="checkbox">
+                    Remember me</label>
+                    <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+                <p>Don't have an account?<a href="#" class="register-link">Register</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
+</nav>
+</section>
+
+<!-- end -->
+  <!-- footer -->
+
+  <section class="footer">
+    <label><h1>Follow me on social media</h1></label>
+    <div class="share">
+        <a href="https://www.facebook.com/profile.php?id=100074757334411" class="fab fa-facebook-f"></a>
+        <a href="https://www.instagram.com/sunidhimusicz/" class="fab fa-instagram"></a>
+        <a href="https://twitter.com/Su_nidhibp" class="fab fa-twitter-square"></a>
+        <a href="www.linkedin.com/in/sunidhibp" class="fab fa-linkedin"></a>
+        <a href="https://in.pinterest.com/bpsunidhi" class="fab fa-pinterest"></a>
+        <a href="https://www.youtube.com/channel/UC5yGWW1UOXBYkn2-DCI_g5g" class="fab fa-youtube"></a>
+    </div>
+    
+
+    <div class="credit">created by <span>Sunidhi</span> | all rights reserved!</div>
+
+</section>
+
+
+<!-- end -->
+
+
+ 
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
